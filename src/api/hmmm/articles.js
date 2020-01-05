@@ -22,7 +22,7 @@ export const detail = data => createAPI(`/articles/${data.id}`, 'get', data)
 export const add = data => createAPI(`/articles`, 'post', data)
 
 // 文章修改
-export const update = data => createAPI(`/articles/${data.id}`, 'put', data)
+export const pdate = data => createAPI(`/articles/${data.id}`, 'put', data)
 
 // 文章删除
 export const remove = data => createAPI(`/articles/${data.id}`, 'delete', data)

@@ -3914,11 +3914,14 @@ export const provinces = () => {
 }
 
 // 城市下地区
-export const citys = pname => {
-  for (const item of datas) {
-    if (item.city === pname) {
-      return item.area
+export const citys = (pname) => {
+
+  for (const info of datas) {
+    // console.log(info)
+    if (info.city == pname) { 
+      return info.area
     }
+    
   }
   return []
 }
